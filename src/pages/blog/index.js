@@ -22,13 +22,15 @@ export default class BlogIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories
+            Latest Posts
           </h1>
         </div>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <BlogRoll />
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <BlogRoll />
+              </div>
             </div>
           </div>
         </section>
