@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'たけBlog 且⊂(ﾟ∀ﾟ*)',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'その日自分が見て聞いて読んで、知ったこと学んだことを、自分の頭の中で整理して、きちんと文章に残すことを目標に様々なことを書いていきます。',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
