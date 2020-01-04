@@ -19,20 +19,6 @@ class BlogRoll extends React.Component {
                 }`}
               >
                 <header>
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <div className="post-flexBox">
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
@@ -43,13 +29,24 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p>
-                    {post.excerpt}
-                  </p>
-                </div>
-                <Link className="button" to={post.fields.slug}>
-                  これを読む →
-                </Link>
+                  <div className="post-meta">
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span className="post-date is-block">
+                      <small>posted on {post.frontmatter.date}</small>
+                    </span>
+                    <p className="post-excerpt">
+                      {post.excerpt}
+                    </p>
+                    <Link className="button" to={post.fields.slug}>
+                      これを読む →
+                    </Link>
+                  </div>
+                </header>
               </article>
             </div>
           ))}
@@ -84,7 +81,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "YYYY/MM/DD")
                 featuredpost
                 featuredimage {
                   childImageSharp {
