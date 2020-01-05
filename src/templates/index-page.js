@@ -19,8 +19,8 @@ export const IndexPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
+          <div className="columns is-centered is-multiline">
+            <div className="column is-7">
               <div className="content">
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
