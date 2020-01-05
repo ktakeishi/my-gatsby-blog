@@ -47,3 +47,4 @@ JAM Stackを取り入れたサイトがどんなもんか手っ取り早く体�
 
 要点だけまとめると、サイトのタイトルとディスクリプションの編集は、「gatsby-config.js」で行えます。
 
+![実際のgatsby-config.jsのキャプチャ](/img/ss-gastby-config.png)
