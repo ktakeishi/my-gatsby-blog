@@ -27,9 +27,11 @@ export default class BlogIndexPage extends React.Component {
         </div>
         <section className="section">
           <div className="container">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <BlogRoll />
+            <div className="columns is-centered is-multiline">
+              <div className="column is-7">
+                <div className="content">
+                  <BlogRoll />
+                </div>
               </div>
             </div>
           </div>
